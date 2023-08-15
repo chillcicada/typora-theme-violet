@@ -15,13 +15,6 @@
 }
 
 @font-face {
-  font-family: "华康手札体W5P";
-  font-style: noemal;
-  font-weight: normal;
-  src: url("violet/华康手札体W5P.ttf")
-}
-
-@font-face {
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
@@ -80,7 +73,6 @@
 :root {
   --bg-color: #F3E5F5;
   --side-bar-bg-color: #F2F4FF;
-  --shadow-color: #eeeeee;
   --title-color: #B388FF;
   --text-color: #212121;
   --select-text-bg-color: #FAFAFA;
@@ -89,6 +81,10 @@
   --control-text-hover-color: var(--side-bar-bg-color);
   --title-border-color: #512DA8;
   --title-before-color: #AAAAAA;
+
+  --shadow-color: #eeeeee;
+  --image-btn-bg-color: ;
+  --image-btn-bf-bg-color: #FCE4EC;
 
   --link-color: #26A69A;
   --link-hover-color: #1DE9B6;
@@ -106,15 +102,15 @@
   --quote-bg-color: #EDE7F6;
   --quote-side-color: #B39DDB;
 
-  --table-color1: #F6E8F8;
-  --table-color2: #FCE4EC;
+  --table-border-color: var(--code-color);
+  --table-color: ;
 
   --del-text-color: #607D8B;
 
   --mark-bg-color: #FFFEE9;
 
   --base-font: "仓耳今楷03-W04", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --title-font: "仓耳今楷03-W04", "华康手札体W5P",  "Source Sans Pro", "EB Garamond", serif;
+  --title-font: "仓耳今楷03-W04",  "Source Sans Pro", "EB Garamond", serif;
   --monospace: "Roboto Mono", "仓耳今楷03-W04", "Fira Code", monospace;
 }
 
@@ -399,7 +395,7 @@ a:focus {
 }
 
 /* Quote */
-#write blockquote {
+blockquote {
   font-family: var(--base-font);
   border-left: 4px solid var(--quote-side-color);
   padding: 10px 15px;
@@ -415,26 +411,26 @@ table {
 }
 
 table tr {
-  border: 1px solid var(--table-color1);
+  border: 1px solid var(--table-border-color);
   margin: 0;
   padding: 0;
 }
 
 table tr:nth-child(2n),
 thead {
-  background-color: var(--table-color2);
+  background-color: var(--table-color);
 }
 
 table th {
   font-weight: bold;
-  border: 1px solid var(--table-color1);
+  border: 1px solid var(--table-border-color);
   border-bottom: 0;
   margin: 0;
   padding: 6px 13px;
 }
 
 table td {
-  border: 1px solid var(--table-color1);
+  border: 1px solid var(--table-border-color);
   margin: 0;
   padding: 6px 13px;
 }
@@ -442,11 +438,13 @@ table td {
 table th:first-child,
 table td:first-child {
   margin-top: 0;
+  border-radius: 5px 0 0 5px;
 }
 
 table th:last-child,
 table td:last-child {
   margin-bottom: 0;
+  border-radius: 0 5px 5px 0;
 }
 
 /* List */
@@ -477,6 +475,16 @@ table td:last-child {
 #write ol li,
 #write ul li {
   padding-left: 0.1rem;
+}
+
+/* Picture */
+.md-image-btn.selected,
+.md-image-btn:hover {
+  background-color: var(--image-btn-bg-color);
+}
+
+.md-image-btn {
+  background-color: var(--image-btn-bf-bg-color);
 }
 
 /* Code */
@@ -520,6 +528,10 @@ table td:last-child {
   background-color: var(--inline-code-bg-color);
 }
 
+.md-diagram-panel {
+  position: static !important;
+}
+
 /* Delete */
 #write del{
   padding: 1px 2px;
@@ -528,6 +540,7 @@ table td:last-child {
 
 #write del:hover {
   color: var(--del-text-color);
+  text-decoration: none;
 }
 
 /* Mark */
