@@ -4,7 +4,9 @@
 
 ## 简介
 
-Violet 意为 紫罗兰，为作者在暑假制作的自用 [Typora](https://typoraio.cn/) 主题，Violet 主题是一款以 浅紫色(#F3E5F5) 为基调的 ~~少女向~~ 主题，用户可根据个人需要自行更改。
+Violet 意为 紫罗兰，为[作者](https://github.com/chillcicada)在暑假制作的自用 [Typora](https://typoraio.cn/) 主题，Violet 主题是一款以 浅紫色(#F3E5F5) 为基调的 ~~少女向~~ 主题，用户可根据个人需要自行更改。
+
+中文字体和英文字体均禁止用于商业。
 
 ## 安装
 
@@ -14,7 +16,7 @@ Violet 意为 紫罗兰，为作者在暑假制作的自用 [Typora](https://typ
 
 ## 预览
 
-![ScreenShot_zh-CN](./ScreenShot_zh-CN.png)
+![shadow-ScreenShot_zh-CN](./ScreenShot_zh-CN.png)
 
 ## 致谢
 
