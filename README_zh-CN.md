@@ -12,9 +12,9 @@ Violet 意为 紫罗兰，为作者在暑假制作的自用 [Typora](https://typ
 2. 打开 Typora，点击 “**偏好设置**” => “**打开主题文件夹**” 按钮，将弹出 Typora 的主题文件夹，将下载的文件拖入 Typora 的主题文件夹中；
 3. 重启 Typora，将主题切换为 Violet 即可。
 
-## 演示
+## 预览
 
-![]()
+![ScreenShot_zh-CN](./ScreenShot_zh-CN.png)
 
 ## 致谢
 

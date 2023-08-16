@@ -10,11 +10,11 @@ Violet, also deemed as purple, is a [Typora](https://typora.io/) theme for self-
 
 1. [Download](https://github.com/chillcicada/typora-theme-violet/archive/refs/heads/main.zip) this theme from Github, then you can get the `violet.css` file and the `violet` folder,
 2. Open Typora. Click "Open Theme Folder" button from **Preference Panel** → **Apperance section**. Put `violet.css` and `vue folder` into the opened folder,
-3. Close and Reopen Typora and change the theme to `violet`.
+3. Close and Reopen Typora and Change the theme to `violet`.
 
-## Demo
+## Preview
 
-![]()
+![ScreenShot](./ScreenShot.png)
 
 ## Acknowledgment
 

@@ -8,10 +8,17 @@
 
 /* Font */
 @font-face {
-  font-family: "仓耳今楷03-W04";
+  font-family: '仓耳今楷03-W04';
   font-style: noemal;
   font-weight: normal;
   src: url("violet/仓耳今楷03-W04.ttf");
+}
+
+@font-face {
+  font-family: 'Adobe Garamond Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("violet/adobe-garamond-2.otf");
 }
 
 @font-face {
@@ -110,7 +117,7 @@
   --mark-bg-color: #FFFEE9;
 
   --base-font: "仓耳今楷03-W04", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --title-font: "仓耳今楷03-W04",  "Source Sans Pro", "EB Garamond", serif;
+  --title-font: "Adobe Garamond Regular", "仓耳今楷03-W04",  "Source Sans Pro", "EB Garamond", serif;
   --monospace: "Roboto Mono", "仓耳今楷03-W04", "Fira Code", monospace;
 }
 
