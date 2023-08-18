@@ -88,8 +88,9 @@
   --control-text-hover-color: var(--side-bar-bg-color);
   --title-border-color: #512DA8;
   --title-before-color: #AAAAAA;
+  --em-color: #41565F;
 
-  --shadow-color: #eeeeee;
+  --shadow-color: #F7E9F9;
   --image-btn-bg-color: ;
   --image-btn-bf-bg-color: #FCE4EC;
 
@@ -401,6 +402,13 @@ a:focus {
   cursor: pointer;
 }
 
+/* Em */
+#write em {
+  font-family: var(--base-font);
+  font-style: italic;
+  color: var(--em-color);
+}
+
 /* Quote */
 blockquote {
   font-family: var(--base-font);
@@ -492,6 +500,18 @@ table td:last-child {
 
 .md-image-btn {
   background-color: var(--image-btn-bf-bg-color);
+}
+
+// Picture Shadow
+.md-image>.md-meta {
+  border-radius: 4px;
+  padding: 2px 0 0 4px;
+  font-size: 1rem;
+  color: inherit;
+}
+
+img[alt|="shadow"] {
+  box-shadow: 3px 3px 10px var(--shadow-color);
 }
 
 /* Code */
