@@ -1,6 +1,6 @@
 # Violet
 
-[English version](README.md)
+[English Docs](README.md)
 
 ## 简介
 
@@ -10,9 +10,11 @@ Violet 意为 紫罗兰，为[作者](https://github.com/chillcicada)在暑假�
 
 ## 安装
 
-1. 下载本主题中的 `violet.css` 和包含字体文件的 `violet` 文件夹；
+1. [下载](https://github.com/chillcicada/typora-theme-violet/releases/download/typora-theme/violet-v0.0.8.zip)本主题中的 `violet.css` 和包含字体文件的 `violet` 文件夹；
 2. 打开 Typora，点击 “**偏好设置**” => “**打开主题文件夹**” 按钮，将弹出 Typora 的主题文件夹，将下载的文件拖入 Typora 的主题文件夹中；
 3. 重启 Typora，将主题切换为 Violet 即可。
+
+> 在 `Release` 中可以找到最新的版本。
 
 ## 预览
 

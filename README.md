@@ -10,9 +10,11 @@ Both Chinese and English fonts are prohibited for commercial use.
 
 ## Install
 
-1. [Download](https://github.com/chillcicada/typora-theme-violet/archive/refs/heads/main.zip) this theme from Github, then you can get the `violet.css` file and the `violet` folder,
+1. [Download](https://github.com/chillcicada/typora-theme-violet/releases/download/typora-theme/violet-v0.0.8.zip) this theme from Github, then you can get the `violet.css` file and the `violet` folder,
 2. Open Typora. Click "**Open Theme Folder**" button from **Preference Panel** → **Apperance section**. Put `violet.css` and `vue folder` into the opened folder,
 3. Close and Reopen Typora and Change the theme to `violet`.
+
+> In `Release` you can find the latest version.
 
 ## Preview
 
