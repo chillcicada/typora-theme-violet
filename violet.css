@@ -89,8 +89,9 @@
   --title-border-color: #512DA8;
   --title-before-color: #AAAAAA;
   --em-color: #41565F;
+  --hr-color: #A08AC9;
 
-  --shadow-color: #F7E9F9;
+  --shadow-color: #dddddd;
   --image-btn-bg-color: ;
   --image-btn-bf-bg-color: #FCE4EC;
 
@@ -407,6 +408,12 @@ a:focus {
   font-family: var(--base-font);
   font-style: italic;
   color: var(--em-color);
+}
+
+/* Hr */
+#write hr {
+  border-color: var(--hr-color);
+  border-top-width: 2px;
 }
 
 /* Quote */
