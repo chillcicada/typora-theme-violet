@@ -10,15 +10,20 @@ Violet 意为 紫罗兰，为[作者](https://github.com/chillcicada)在暑假�
 
 ## 安装
 
-1. [下载](https://github.com/chillcicada/typora-theme-violet/releases/download/typora-theme/violet-v0.0.8.zip)本主题中的 `violet.css` 和包含字体文件的 `violet` 文件夹；
-2. 打开 Typora，点击 “**偏好设置**” => “**打开主题文件夹**” 按钮，将弹出 Typora 的主题文件夹，将下载的文件拖入 Typora 的主题文件夹中；
-3. 重启 Typora，将主题切换为 Violet 即可。
+1. [**下载**](https://github.com/chillcicada/typora-theme-violet/releases/download/v1.0.0/violet.v1.0.0.zip)，打开压缩包后将获得本主题中的 `violet.css` 文件、`violet-dark.css` 文件和包含字体文件的 `violet` 文件夹；
+2. **打开** Typora，依次**点击** `偏好设置` => `外观` => `打开主题文件夹` 按钮，将弹出 Typora 的主题文件夹，将下载的文件(`violet.css` 和 `violet/`)**拖入** Typora 的主题文件夹中；
+3. **重启** Typora，将主题**切换**为 Violet；
+4. 如果需要仅在深色模式下应用 Violet Dark 主题，可打开 `偏好设置` => `外观` => `在深色模式下使用独立的主题` 按钮，然后将深色主题设置为 Violet Dark 即可。
 
-> 在 `Release` 中可以找到最新的版本。
+> 如果下载链接没有指向最新版本，请在 `Release` 中手动找到并下载最新的版本。
 
 ## 预览
 
-![shadow-ScreenShot_zh-CN](./ScreenShot_zh-CN.png)
+![shadow-ScreenShot_zh-CN](./ScreenShots/ScreenShot_zh-CN.png)
+
+## Todo
+
+- [ ] 添加黑夜主题
 
 ## 致谢
 

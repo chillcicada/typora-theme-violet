@@ -1,0 +1,58 @@
+/**
+ * Typora-Theme: Violet-dark
+ * @author chillcicada
+ * @link https://github.com/chillcicada/typora-theme-violet
+ * @version 1.0.0
+ * 
+ * @description: A dark theme for Typora
+ * 
+ * todo: revert root color by css var and calc
+ */
+
+ @import url(violet.css);
+
+ :root {
+   --bg-color: #F3E5F5;
+   --side-bar-bg-color: #F2F4FF;
+   --title-color: #B388FF;
+   --text-color: #212121;
+   --select-text-bg-color: #FAFAFA;
+   --item-hover-bg-color: #FCE4EC;
+   --control-text-color: var(--side-bar-bg-color);
+   --control-text-hover-color: var(--side-bar-bg-color);
+   --title-border-color: #512DA8;
+   --title-before-color: #AAAAAA;
+   --em-color: #41565F;
+   --hr-color: #A08AC9;
+ 
+   --shadow-color: #dddddd;
+   --image-btn-bg-color: ;
+   --image-btn-bf-bg-color: #FCE4EC;
+ 
+   --link-color: #26A69A;
+   --link-hover-color: #1DE9B6;
+   --link-bottom-color: #bbbbbb;
+ 
+   --code-color: #37474F;
+   --code-bg-color: #FBEDFD;
+   --inline-code-bg-color: #F9EBFB;
+ 
+   --context-menu-bg-color: var(--side-bar-bg-color);
+   --dropdown-menu-bg-color: #888888;
+   --megamenu-bg-color: var(--side-bar-bg-color);
+ 
+   --quote-color: #455A64;
+   --quote-bg-color: #EDE7F6;
+   --quote-side-color: #B39DDB;
+ 
+   --table-border-color: var(--code-color);
+   --table-color: ;
+ 
+   --del-text-color: #607D8B;
+ 
+   --mark-bg-color: #FFFEE9;
+ 
+   --base-font: "仓耳今楷03-W04", "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   --title-font: "Adobe Garamond Regular", "仓耳今楷03-W04",  "Source Sans Pro", "EB Garamond", serif;
+   --monospace: "Roboto Mono", "仓耳今楷03-W04", "Fira Code", monospace;
+ }

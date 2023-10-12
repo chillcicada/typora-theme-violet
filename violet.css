@@ -1,7 +1,11 @@
 /**
  * Typora-Theme: Violet
  * @author chillcicada
- * @link https://github.com/chillcicada
+ * @link https://github.com/chillcicada/typora-theme-violet
+ * @version 1.0.0
+ * @description: a girly theme for typora base on color #F3E5F5
+ *
+ * todo: revert root color by css var and calc
  */
 
 @charset "UTF-8";
@@ -78,12 +82,59 @@
 }
 
 :root {
-  --bg-color: #F3E5F5;
-  --side-bar-bg-color: #F2F4FF;
+  /**
+   * @zh 此处使用 HSLA 来定义基础颜色，HSLA 依次为 色相(Hue)、饱和度(Saturation)、亮度(Lightness)、透明度(Alpha)
+   * @en Use HSLA to define the basic color, HSLA is Hue, Saturation, Lightness, Alpha
+   */
+  --hue: 292;
+  --saturation: 44%;
+  --lightness: 50%;
+  --alpha: 1;
+  /**
+   * @zh 设置文字变色的临界值，建议控制在 40%-60%
+   * @en Set the critical value of text color, it is recommended to control it within 40% - 60%
+   */
+  --threshold: 50%;
+  /**
+  * @zh 定义全局背景色
+  *     默认背景色为 hsla(292, 44%, 93%, 1)
+  * @en Define the global background color
+  *     Defualt background color: hsla(292, 44%, 93%, 1)
+  */
+  --bg-color: hsla(var(--hue), var(--saturation), var(--lightness), var(--alpha));
+  /**
+   * @zh 定义边栏颜色
+   * @en Define the sidebar color
+   */
+  --side-bar-bg-color: hsla(var(--hue), var(--saturation), calc(var(--lightness) - 10%), var(--alpha));
+
+  /* --side-bar-bg-color: #F2F4FF; */
+
+  /**
+   * @zh 定义标题颜色
+   * @en Define the title color
+   */
   --title-color: #B388FF;
-  --text-color: #212121;
-  --select-text-bg-color: #FAFAFA;
-  --item-hover-bg-color: #FCE4EC;
+  /**
+   * @zh 定义文字颜色
+   * @en Define the text color
+   */
+  --text-color: hsla(0, 0%, calc((var(--threshold) - var(--lightness)) * 999999), 1);
+  /**
+   * @zh 定义选中文字背景色
+   * @en Define the selected text background color
+   */
+  when var(--lightness) > var(--threshold) {
+    --select-text-bg-color: hsla(0, 0%, 90%, 1);
+    else {
+      --select-text-bg-color: hsla(0, 0%, 10%, 1);
+    }
+  }
+  /**
+   * @zh 定义悬浮文字颜色
+   * @en Define the hovered text color
+   */
+  --item-hover-bg-color: hsla();
   --control-text-color: var(--side-bar-bg-color);
   --control-text-hover-color: var(--side-bar-bg-color);
   --title-border-color: #512DA8;
@@ -509,7 +560,7 @@ table td:last-child {
   background-color: var(--image-btn-bf-bg-color);
 }
 
-// Picture Shadow
+/* Picture Shadow */
 .md-image>.md-meta {
   border-radius: 4px;
   padding: 2px 0 0 4px;
