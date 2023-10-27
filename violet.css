@@ -91,7 +91,7 @@
   --lightness: 50%;
   --alpha: 1;
   /**
-   * @zh 设置文字变色的临界值，建议控制在 40%-60%
+   * @zh 设置文字变色的临界值，建议控制在 40% - 60%
    * @en Set the critical value of text color, it is recommended to control it within 40% - 60%
    */
   --threshold: 50%;
